@@ -1,6 +1,7 @@
 # codelaboc.github.io
 
 CodeLab OC Website Vision Statement
+
 The purpose of the CodeLab OC website is to work as a hub for members of CodeLab and interested individuals to get engaged and involved. The CodeLab website should include:
 
 1) CodeLab Mission Statement
