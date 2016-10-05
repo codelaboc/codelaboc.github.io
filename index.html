@@ -1,41 +1,88 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title> CodeLab: Crafting Code in Orange County</title>
-  </head>
-  <body>
-    <header role="banner">
-    <h1>CodeLab</h1>
-    <p>Welcome to CodeLab! We're a group for coders of all levels and backgrounds getting together to learn and build coding projects. Whether you're learning to code for the first time, or are an experienced programmer learning a new language, all ages, levels, and backgrounds are welcome.
-    <p>Bring your laptop (or you can pair with someone), projects and challenges, and curiosity for code!</p>
-</header>
-<section>
-<h3>When</h3>
-<p>Every other Monday evening in Downtown Fullerton</p>
-</section>
-<section>
-<h3>Where</h3>
-<p><strong>Pro Desk Space</strong>
-<p>112 E. Amerige Ave.</p>
-<p>Fullerton, CA 92832</p>
-</section>
-<section>
-<h2>CodeLab Mission</h2>
-<p>CodeLab aims to create an all-inclusive, welcoming, supportive community and environment to learn and build code.</p>
-</section>
-<section>
-<h2>Code of Conduct</h2>
-<p><i>CodeLab is committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status, and religion (or lack thereof). All members must agree to our <a href="http://maptime.io/code-of-conduct/" title="Code of Conduct based on Maptime Code of Conduct" target="_blank"></i><strong>Code of Conduct</a></strong>.</p>
-</section>
-<section>
-<h3>Our Host</h3>
-<p>Special thanks to our host, <a href="http://www.prodeskspace.com/" title="Pro Desk Space site" target="_blank"><strong>Pro Desk Space</strong></a> for providing our space!</p>
-</section>
-<footer role="contact info">
-<h3>Follow CodeLab!</h3>
-  <ul>Twitter: <a href="https://www.twitter.com/codelaboc" title="CodeLab OC Twitter account"><strong>@CodeLabOC</strong><a/></ul>
-  <ul>GitHub: <a href="https://github.com/codelaboc/hellocodelab" title="CodeLab OC GitHub repository" target="_blank"><strong>github.com/codelaboc</strong></a></ul>
-</footer>
-</body>
-</html>
+---
+layout: landing
+---
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+
+							<!-- <ul class="actions">
+								<li><a href="#" class="button special">Activate</a></li>
+							</ul> -->
+              <h2 style="margin-bottom:0">{{ site.title }}</h2>
+              <p>{{ site.description | markdownify }}</p>
+              <ul class="icons">
+                {% for socloc in site.social %}
+                {% if socloc[1] %}
+                {% if socloc[0] == 'email' %}
+                <li><a target="_blank" href="{{ socloc[1] }}" class="icon fa-envelope-o fa-2x"
+                       ><span class="label">E-mail</span></a></li>
+                {% else %}
+                <li><a target="_blank" href="{{ socloc[1] }}" class="icon fa-2x fa-{{ socloc[0] }}"
+                       ><span class="label">{{ socloc[0] }}</span></a></li>
+                {% endif %}
+                {% endif %}
+                {% endfor %}
+              </ul>
+						</div>
+						<a href="#one" class="more scrolly">Learn More</a>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Welcome to CodeLab!</h2>
+								<p> We are a group for coders of all levels and backgrounds getting together to learn and build coding projects. Whether you're learning to code for the first time, or are an experienced programmer learning a new language, all ages, levels, and backgrounds are welcome.</p>
+                <br>
+                <h2>Our Mission</h2>
+                <p>CodeLab aims to create an all-inclusive, welcoming, supportive community and environment to learn and build code.</p>
+							</header>
+							<!-- <ul class="icons major">
+								<li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
+								<li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
+							</ul> -->
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+
+						<section class="spotlight">
+							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+                <h2>When</h2>
+								<p>Every other Monday evening in Downtown Fullerton</p><br>
+                <h2>Where</h2>
+                <p>Special thanks to our host for providing our space!</p>
+                <p><a href="http://www.prodeskspace.com/" title="Pro Desk Space site" target="_blank"><strong>Pro Desk Space</strong></a><br>
+                  112 E. Amerige Ave.<br>
+                  Fullerton, CA 92832
+                </p>
+                <p></p>
+							</div>
+						</section>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Code of Conduct</h2>
+								<p><i>CodeLab is committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status, and religion (or lack thereof). All members must agree to our <a href="http://maptime.io/code-of-conduct/" title="Code of Conduct based on Maptime Code of Conduct" target="_blank"></i><strong>Code of Conduct</a></strong>.</p>
+							</header>
+						</div>
+					</section>
+
+				<!-- CTA -->
+					<!-- <section id="cta" class="wrapper style4">
+						<div class="inner">
+							<header>
+								<h2>Arcue ut vel commodo</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
+							</header>
+							<ul class="actions vertical">
+								<li><a href="#" class="button fit special">Activate</a></li>
+								<li><a href="#" class="button fit">Learn More</a></li>
+							</ul>
+						</div>
+					</section> -->
